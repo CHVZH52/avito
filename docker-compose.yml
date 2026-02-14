@@ -1,0 +1,15 @@
+services:
+  parser:
+    build: .
+    container_name: parser_avito
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./:/app
+    command: python service_runner.py
+    logging:
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "5"

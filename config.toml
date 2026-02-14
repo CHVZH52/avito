@@ -1,0 +1,40 @@
+[avito]
+tg_chat_id = []
+
+# В режиме Telegram-бота фильтры создаются в самом боте (кнопка "➕ Новый запрос")
+urls = []
+queries = []
+
+# Приоритетная настройка: параметризованные фильтры
+# region: all | moscow | mo | moscow_mo
+searches = []
+
+# Для обратной совместимости (если searches не заполнен)
+region_slug = ""
+sort_new = false
+delivery_only = false
+
+count = 1
+keys_word_white_list = []
+keys_word_black_list = []
+seller_black_list = []
+max_price = 9999999999
+min_price = 0
+geo = ""
+proxy_string = ""
+proxy_change_url = ""
+
+# Бесплатные прокси 
+use_free_proxies = true
+free_proxies_mix_with_user_proxies = false
+free_proxies_max_pool = 25
+free_proxies_refresh_minutes = 60
+pause_general = 60
+pause_between_links = 5
+max_age = 0
+max_count_of_retry = 5
+ignore_reserv = false
+ignore_promotion = false
+one_time_start = false
+one_file_for_link = false
+save_xlsx = true
